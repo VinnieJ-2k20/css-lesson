@@ -1,0 +1,24 @@
+{
+  "name": "css-lesson",
+  "version": "1.0.0",
+  "description": "",
+  "main": "menu.js",
+  "scripts": {
+    "compile": "sass ./src/index.scss ./dist/style.css",
+    "compile:watch": "sass ./src/index.scss ./dist/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VinnieJ-2k20/css-lesson.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VinnieJ-2k20/css-lesson/issues"
+  },
+  "homepage": "https://github.com/VinnieJ-2k20/css-lesson#readme",
+  "devDependencies": {
+    "sass": "^1.54.5"
+  }
+}
