@@ -7,11 +7,19 @@ body {
   margin: 0;
 }
 
-.promo {
+.footer {
+  position: sticky;
+  bottom: 0;
+  z-index: -1;
   height: 300px;
-  background-image: url("https://mate-academy.github.io/fe-program/assets/MA_top.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  background-image: url("https://mate-academy.github.io/fe-program/assets/MA_bottom.jpg");
   background-size: cover;
-  background-position: center top;
+  background-position: top;
 }
 
 .header {
@@ -19,79 +27,58 @@ body {
   top: 0;
 }
 
-.nav {
-  background-color: rgba(0, 0, 0, 0.8);
-  backdrop-filter: saturate(180%) blur(20px);
-  text-align: center;
-}
-
-.nav__toggler::before {
-  content: "Open";
-}
-
-.nav--open .nav__toggler::before {
-  content: "Close";
-}
-
-.nav__list {
-  height: 0;
-  overflow: hidden;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  margin: 0;
-  padding-left: 0;
-  list-style: none;
-}
-
-.nav--open .nav__list {
-  height: auto;
-}
-
-@media (min-width: 640px) {
-  .nav__list {
-    flex-direction: row;
-  }
-}
-
-.nav__link {
-  margin: 0 20px;
-  padding: 10px 5px;
-  display: block;
-
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-
-  transition: color 0.5s;
-}
-
-.nav__link:hover {
-  color: yellow;
-}
-
 .main {
   background-color: antiquewhite;
   padding: 10px 20px;
 }
 
-.footer {
-  position: sticky;
-  bottom: 0;
-  z-index: -1;
-
-  height: 300px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.nav {
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: saturate(180%) blur(20px);
   text-align: center;
-  
-  color: #fff;
-
-  background-image: url("https://mate-academy.github.io/fe-program/assets/MA_bottom.jpg");
-  background-size: cover;
-  background-position: top;
 }
+.nav__toggler::before {
+  content: "Open";
+}
+.nav--open .nav__toggler::before {
+  content: "Close";
+}
+.nav__list {
+  height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+@media (min-width: 620px) {
+  .nav__list {
+    flex-direction: row;
+  }
+}
+.nav--open .nav__list {
+  height: auto;
+}
+.nav__link {
+  margin: 0 20px;
+  padding: 10px 5px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.5s;
+}
+.nav__link:hover {
+  color: yellow;
+}
+
+.promo {
+  height: 300px;
+  background-image: url("https://mate-academy.github.io/fe-program/assets/MA_top.jpg");
+  background-size: cover;
+  background-position: center top;
+}
+
+/*# sourceMappingURL=style.css.map */

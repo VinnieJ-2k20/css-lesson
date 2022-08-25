@@ -1,0 +1,50 @@
+.nav {
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: saturate(180%) blur(20px);
+  text-align: center;
+
+  &__toggler::before {
+    content: "Open";
+  }
+  
+  &--open &__toggler::before {
+    content: "Close";
+  }
+  
+  &__list {
+    height: 0;
+    overflow: hidden;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+
+    @include onTablet {
+      flex-direction: row;
+    }
+  }
+
+  &--open &__list {
+    height: auto;
+  }
+  
+  &__link {
+    margin: 0 20px;
+    padding: 10px 5px;
+    display: block;
+  
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  
+    transition: color $duration;
+
+    &:hover {
+      color: yellow;
+    }
+  }
+}
